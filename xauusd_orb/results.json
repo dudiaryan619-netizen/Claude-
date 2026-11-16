@@ -1,0 +1,111 @@
+{
+  "ORB + OrderFlow (strategy)": {
+    "overall": {
+      "trades": 38,
+      "win_rate_%": 39.5,
+      "net_usd_per_oz": -17.95,
+      "net_usd_1lot_100oz": -1795.0,
+      "total_R": -4.92,
+      "avg_R": -0.129,
+      "profit_factor": 0.89,
+      "max_drawdown_usd_oz": -63.91,
+      "avg_win": 9.43,
+      "avg_loss": -6.93,
+      "exits": {
+        "SL": 22,
+        "TP": 12,
+        "time": 4
+      }
+    },
+    "by_session": {
+      "London": {
+        "trades": 20,
+        "win_rate_%": 35.0,
+        "net_usd_per_oz": -28.88,
+        "net_usd_1lot_100oz": -2888.0,
+        "total_R": -5.93,
+        "avg_R": -0.297,
+        "profit_factor": 0.63,
+        "max_drawdown_usd_oz": -51.52,
+        "avg_win": 6.97,
+        "avg_loss": -5.98,
+        "exits": {
+          "SL": 12,
+          "time": 4,
+          "TP": 4
+        }
+      },
+      "NewYork": {
+        "trades": 18,
+        "win_rate_%": 44.4,
+        "net_usd_per_oz": 10.93,
+        "net_usd_1lot_100oz": 1093.0,
+        "total_R": 1.01,
+        "avg_R": 0.056,
+        "profit_factor": 1.13,
+        "max_drawdown_usd_oz": -33.14,
+        "avg_win": 11.58,
+        "avg_loss": -8.17,
+        "exits": {
+          "SL": 10,
+          "TP": 8
+        }
+      }
+    }
+  },
+  "Plain ORB (no order-flow filter)": {
+    "overall": {
+      "trades": 41,
+      "win_rate_%": 41.5,
+      "net_usd_per_oz": -1.37,
+      "net_usd_1lot_100oz": -137.0,
+      "total_R": -0.38,
+      "avg_R": -0.009,
+      "profit_factor": 0.99,
+      "max_drawdown_usd_oz": -52.07,
+      "avg_win": 9.08,
+      "avg_loss": -6.49,
+      "exits": {
+        "SL": 22,
+        "TP": 17,
+        "time": 2
+      }
+    },
+    "by_session": {
+      "London": {
+        "trades": 21,
+        "win_rate_%": 42.9,
+        "net_usd_per_oz": -1.2,
+        "net_usd_1lot_100oz": -120.0,
+        "total_R": 0.13,
+        "avg_R": 0.006,
+        "profit_factor": 0.98,
+        "max_drawdown_usd_oz": -39.98,
+        "avg_win": 6.75,
+        "avg_loss": -5.17,
+        "exits": {
+          "SL": 11,
+          "TP": 9,
+          "time": 1
+        }
+      },
+      "NewYork": {
+        "trades": 20,
+        "win_rate_%": 40.0,
+        "net_usd_per_oz": -0.17,
+        "net_usd_1lot_100oz": -17.0,
+        "total_R": -0.51,
+        "avg_R": -0.026,
+        "profit_factor": 1.0,
+        "max_drawdown_usd_oz": -30.19,
+        "avg_win": 11.7,
+        "avg_loss": -7.82,
+        "exits": {
+          "SL": 11,
+          "TP": 8,
+          "time": 1
+        }
+      }
+    }
+  }
+}
