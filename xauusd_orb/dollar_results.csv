@@ -1,0 +1,15 @@
+strategy,period,trades,win_pct,profit,end_balance,lowest_balance
+NY ORB + flow (TP 1.0x / SL 1.0x),Last 30 days,16,75.0,715,1715,1000
+NY ORB + flow (TP 1.0x / SL 1.0x),Previous 30 days,24,50.0,-112,888,642
+NY ORB + flow (TP 0.75x / SL 1.0x),Last 30 days,16,81.2,590,1590,1000
+NY ORB + flow (TP 0.75x / SL 1.0x),Previous 30 days,24,50.0,-412,588,517
+NY ORB + flow (TP 1.0x / SL 2.0x),Last 30 days,16,75.0,158,1158,990
+NY ORB + flow (TP 1.0x / SL 2.0x),Previous 30 days,24,66.7,-56,944,800
+S/R bounce + OF (TP 1.0x / SL 2.0x),Last 30 days,60,73.3,382,1382,938
+S/R bounce + OF (TP 1.0x / SL 2.0x),Previous 30 days,81,61.7,-755,245,59
+VWAP mean reversion (TP 0.5x / SL 1.5x),Last 30 days,26,84.6,215,1215,959
+VWAP mean reversion (TP 0.5x / SL 1.5x),Previous 30 days,25,72.0,-225,775,626
+VWAP mean reversion (TP 0.5x / SL 2.0x),Last 30 days,26,84.6,62,1062,869
+VWAP mean reversion (TP 0.5x / SL 2.0x),Previous 30 days,25,84.0,32,1032,779
+Asian breakout (TP 2.0x / SL 1.0x),Last 30 days,12,25.0,-378,622,38
+Asian breakout (TP 2.0x / SL 1.0x),Previous 30 days,23,47.8,859,1859,893
