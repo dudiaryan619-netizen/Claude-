@@ -23,7 +23,18 @@ COST = 0.40
 def load60():
     df = yf.download("GC=F", period="60d", interval="5m", progress=False, auto_adjust=False)
     if isinstance(df.columns, pd.MultiIndex): df.columns = df.columns.get_level_values(0)
-    df = df[["Open", "High", "Low", "Close", "Volume"]].dropna()
+    return prep(df[["Open", "High", "Low", "Close", "Volume"]].dropna())
+
+
+def load_csv(path):
+    """5m OHLCV csv (e.g. from fetch_dukascopy.py)."""
+    df = pd.read_csv(path, index_col=0)
+    df.index = pd.to_datetime(df.index, utc=True)
+    return prep(df)
+
+
+def prep(df):
+    df = df.copy()
     df.index = df.index.tz_convert("America/New_York")
     c = df.Close
     tr = pd.concat([df.High - df.Low, (df.High - c.shift()).abs(), (df.Low - c.shift()).abs()], axis=1).max(axis=1)

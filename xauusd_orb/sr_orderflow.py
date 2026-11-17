@@ -45,7 +45,7 @@ def levels_at(df, i, swings):
     return [x for x in lv if pd.notna(x)]
 
 
-def run(df, setup, use_of):
+def run(df, setup, use_of, tp_mult=RR, sl_mult=1.0):
     trades, losses, swings, i, n = [], {}, [], 250, len(df)
     while i < n - 1:
         b = df.iloc[i]
@@ -68,7 +68,8 @@ def run(df, setup, use_of):
         if not s: i += 1; continue
         entry = b.Close
         risk = float(np.clip(abs(entry - (lvl - s * 0.5 * b.atr)), 0.5 * b.atr, 1.5 * b.atr))
-        sl, tp = entry - s * risk, entry + s * RR * risk
+        sl, tp = entry - s * sl_mult * risk, entry + s * tp_mult * risk
+        risk = sl_mult * risk
         for j in range(i + 1, n):
             c = df.iloc[j]
             for col in ("ph_conf", "pl_conf"):
