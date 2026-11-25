@@ -1,0 +1,107 @@
+{
+ "gstin": "32BBBPC9830K1ZT",
+ "fp": "092026",
+ "version": "GST3.2.2",
+ "hash": "hash",
+ "b2b": [
+  {
+   "ctin": "32AAJFA2227L1ZO",
+   "inv": [
+    {
+     "inum": "65",
+     "idt": "03-09-2026",
+     "val": 41595.0,
+     "pos": "32",
+     "rchrg": "N",
+     "inv_typ": "R",
+     "itms": [
+      {
+       "num": 1801,
+       "itm_det": {
+        "txval": 35250,
+        "rt": 18,
+        "camt": 3172.5,
+        "samt": 3172.5,
+        "csamt": 0
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "b2cs": [
+  {
+   "sply_ty": "INTRA",
+   "rt": 18,
+   "typ": "OE",
+   "pos": "32",
+   "txval": 519505,
+   "camt": 46755.45,
+   "samt": 46755.45,
+   "csamt": 0
+  }
+ ],
+ "hsn": {
+  "hsn_b2b": [
+   {
+    "num": 1,
+    "hsn_sc": "6802",
+    "desc": "WORKED MONUMENTAL OR BUILDING STONE (EXCEPT SLATE) AND ARTICLES THEREOF",
+    "uqc": "SQF",
+    "qty": 470,
+    "rt": 18,
+    "txval": 35250,
+    "iamt": 0,
+    "camt": 3172.5,
+    "samt": 3172.5,
+    "csamt": 0
+   }
+  ],
+  "hsn_b2c": [
+   {
+    "num": 1,
+    "hsn_sc": "2515",
+    "desc": "MARBLE, TRAVERTINE, ECAUSSINE AND OTHER CALCAREOUS MONUMENTAL OR BUILDING STONE",
+    "uqc": "SQF",
+    "qty": 9920,
+    "rt": 18,
+    "txval": 470980,
+    "iamt": 0,
+    "camt": 42388.2,
+    "samt": 42388.2,
+    "csamt": 0
+   },
+   {
+    "num": 2,
+    "hsn_sc": "6802",
+    "desc": "WORKED MONUMENTAL OR BUILDING STONE (EXCEPT SLATE) AND ARTICLES THEREOF",
+    "uqc": "SQF",
+    "qty": 690,
+    "rt": 18,
+    "txval": 48525,
+    "iamt": 0,
+    "camt": 4367.25,
+    "samt": 4367.25,
+    "csamt": 0
+   }
+  ]
+ },
+ "doc_issue": {
+  "doc_det": [
+   {
+    "doc_num": 1,
+    "docs": [
+     {
+      "num": 1,
+      "from": "64",
+      "to": "77",
+      "totnum": 14,
+      "cancel": 0,
+      "net_issue": 14
+     }
+    ]
+   }
+  ]
+ }
+}
